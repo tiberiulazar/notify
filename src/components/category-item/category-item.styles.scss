@@ -1,0 +1,45 @@
+@import "../../scss/variables.scss";
+
+.category-item {
+  color: #34495e;
+  font-size: 1.6em;
+  line-height: 1.4;
+  font-weight: 500;
+  padding-left: 0.5rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__color {
+    display: block;
+    margin-right: 1.8rem;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+
+    &--red {
+      background-color: $color-red;
+    }
+
+    &--orange {
+      background-color: $color-orange;
+    }
+
+    &--green {
+      background-color: $color-green;
+    }
+
+    &--blue {
+      background-color: $color-blue;
+    }
+
+    &--midnight {
+      background-color: $color-midnight;
+    }
+  }
+}

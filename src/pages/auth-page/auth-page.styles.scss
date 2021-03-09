@@ -1,0 +1,43 @@
+.auth {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  &__state {
+    align-self: flex-start;
+    flex-grow: 1;
+  }
+
+  &__image {
+    flex: 0 0 60%;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__illustration {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.switch-auth {
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 0 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

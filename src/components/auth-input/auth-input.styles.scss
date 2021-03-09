@@ -1,0 +1,57 @@
+.auth-group {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: text;
+
+    &--shrink {
+      top: -1.4rem;
+      left: 1rem;
+      font-size: 1.2rem;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+    border-radius: 1rem;
+    background-color: #f2f2f2;
+    border: 0;
+    width: 100%;
+    display: block;
+    max-width: 38rem;
+    box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.15);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__input:focus + &__label {
+    top: -1.4rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__input:hover + &__label,
+  &__label:hover {
+    top: -1.4rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 1);
+  }
+}

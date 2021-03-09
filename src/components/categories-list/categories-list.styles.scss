@@ -1,0 +1,30 @@
+.categories {
+  padding: 1.5rem 2rem;
+  flex: 0 0 24rem;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2rem;
+  margin-right: 4rem;
+
+  &__action {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    color: #5371c5;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__add-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+
+    path {
+      fill: #5271c4;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.sign-in {
+  flex-grow: 1;
+
+  &__main {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4rem;
+  }
+
+  &__others {
+    margin-bottom: 2rem;
+  }
+
+  &__others-text {
+    font-size: 1.6rem;
+  }
+
+  &__already {
+    font-size: 1.4rem;
+  }
+}

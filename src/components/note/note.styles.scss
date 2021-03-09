@@ -1,0 +1,53 @@
+.note {
+  flex: 0 0 21%;
+  background-color: #16a085;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  height: 20rem;
+
+  &:not(:nth-child(4n)) {
+    margin-right: 5.33%;
+  }
+
+  &--add {
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &__add-icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    margin-top: auto;
+  }
+}

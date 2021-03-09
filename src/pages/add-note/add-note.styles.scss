@@ -1,0 +1,97 @@
+@import "../../scss/variables.scss";
+
+.add-note {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__title__input {
+    font-size: 2.4rem;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: #000000;
+    padding: 1rem 0rem;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #5271c4;
+      opacity: 1; /* Firefox */
+    }
+
+    &:focus {
+      outline: 0;
+      padding-left: 1rem;
+      border-bottom: 2px solid #5271c4;
+    }
+
+    &:valid {
+      padding-left: 1rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #5271c4;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+  &__text {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 2rem;
+    line-height: 1.5;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0;
+    border-radius: 5px;
+    flex-grow: 1;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__submit {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1rem 1.8rem;
+    font-size: 1.4rem;
+    background-color: rgba(82, 112, 196, 0.8);
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    align-self: flex-end;
+
+    &:hover {
+      background-color: rgba(82, 112, 196, 1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: translateY(-4px);
+    }
+  }
+}
